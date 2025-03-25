@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[Your Name] - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+   <button id="toggle-btn">Toggle Dark/Light Mode</button>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header id="home">
+    <nav>
+      <div class="navbar">
+        <h1>Rakshitha V</h1>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="hero-section">
+      <h2>Welcome to my portfolio</h2>
+      <p>I am a passionate Web developer with experience in HTML, CSS, Javascript and MySQL.</p><br>
+      <a href="#projects" class="cta-button">View My Work</a>
+    </div>
+  </header>
+
+ <!-- About Section -->
+  <section id="about" class="section"><br>
+    <h2>About Me</h2>
+    <p>Hi, I'm Rakshitha V, a Web developer. I am passionate about building web applications and solving real-world problems through code. I specialize in front-end development and have a strong foundation in both design and development. My goal is to build accessible, user-friendly web applications.</p>
+      </section>
+
+ <!-- Skills Section -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">
+        <h3>Technical Skills</h3>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>React, Node.js, Express</li>
+          <li>Python, Django</li>
+          <li>Git, GitHub</li>
+        </ul>
+      </div>
+      <div class="skill">
+        <h3>Non-Technical Skills</h3>
+        <ul>
+          <li>Problem-Solving</li>
+          <li>Communication</li>
+          <li>Teamwork</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>My Projects</h2>
+    <div class="project-card">
+      <img src="assets/images/project1.jpg" alt="Project 1">
+      <h3>Project 1: E-commerce Website</h3>
+      <p>An e-commerce platform built using React and Node.js. It features product pages, cart functionality, and a payment gateway.</p>
+      <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <img src="assets/images/project2.jpg" alt="Project 2">
+      <h3>Project 2: Personal Blog</h3>
+      <p>A personal blog built with Django and Python. It includes features like a content management system and user authentication.</p>
+      <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+    </div>
+  </section>
+
+   <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form action="submitForm()" method="POST" class="contact-form">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Rakshitha. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

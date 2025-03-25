@@ -1,0 +1,209 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Body Styles */
+body {
+  background: linear-gradient(135deg, #00aaff, #ff0088); /* Vibrant gradient background */
+  color: #fff; /* White text color for contrast */
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  text-align: center;
+}
+
+body.light-mode {
+  background-color: #fff;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+h1, h2, h3 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+/* About Section Styles */
+#about {
+  padding: 50px 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark background with opacity */
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+#about img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Profile image shadow */
+}
+
+/* Skills Section */
+#skills {
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #ff0088, #ffcc00); /* Gradient background for skills */
+  border-radius: 10px;
+}
+
+#skills .skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skill {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.skill:hover {
+  transform: translateY(-10px); /* Hover effect to lift the skill card */
+}
+
+.skill h3 {
+  color: #ffcc00; /* Bright yellow for skill category titles */
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.skill ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skill li {
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+/* Projects Section */
+#projects {
+  padding: 50px 20px;
+  background-color: #222;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.project-card {
+  background-color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: translateY(-10px); /* Hover effect to lift the project card */
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.project-card h3 {
+  color: #ffcc00;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.project-card a {
+  text-decoration: none;
+  color: #ff0088;
+  font-weight: bold;
+}
+
+.project-card a:hover {
+  color: #00aaff; /* Change link color on hover */
+}
+
+/* Contact Section */
+#contact {
+  background: #222;
+  color: #fff;
+  padding: 50px 20px;
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+input, textarea {
+  width: 80%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 2px solid #ff0088;
+  background: #333;
+  color: #fff;
+}
+
+input[type="submit"] {
+  width: 50%;
+  background-color: #ff0088;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+input[type="submit"]:hover {
+  background-color: #00aaff;
+  transition: background-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #00aaff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #about, #skills, #projects, #contact {
+    padding: 30px 20px;
+  }
+
+  .skills {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill {
+    width: 80%;
+  }
+
+  .project-card {
+    width: 80%;
+  }
+}
